@@ -1,0 +1,13 @@
+namespace org.apidl.model;
+
+public DeclaredMethodParameter
+{
+	method DeclaredMethodParameter(String name, String type, ForRestriction forRestriction) for Java;
+	
+	method initWithName(String name, String type, ForRestriction forRestriction) for iOS;
+	
+	method getName returns String;
+	method getType returns String;
+	method hasForRestriction returns boolean;
+	method getForRestriction returns ForRestriction;
+}

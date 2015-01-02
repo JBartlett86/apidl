@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }    
+}
+
+apply plugin: 'java'
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/java'
+        }
+    }
+
+    test {
+        java {
+            srcDir 'test'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	compile 'org.antlr:antlr:3.5'
+	compile 'junit:junit:4.11'
+}

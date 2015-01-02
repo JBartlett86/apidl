@@ -1,0 +1,24 @@
+namespace org.apidl.model for java;
+namespace Org.Apidl.Model for CSharp;
+
+public DeclaredMethod
+{
+	method hasReturnType() returns boolean;
+	
+	method getReturnType() returns Type for java;
+	method setReturnType(Type type) for java;
+	
+	method getName() returns string;
+	
+	method hasParameters() returns boolean;
+	method getParameters() returns List<DeclaredMethodParameter> for java;
+	method getParameters() returns IList<DeclaredMethodParameter> for CSharp;
+	
+	method addParameter(DeclaredMethodParameter parameter);
+	
+	method hasRestrictions() returns boolean;
+	method getRestrictions() returns List<Restriction>;
+	method addRestriction(Restriction restriction);
+	method addRestrictions(List<Restriction> restrictions);
+}
+
